@@ -1,0 +1,211 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body & Font */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* About Me Section */
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.profile {
+    flex: 1;
+    padding: 20px;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.bio {
+    flex: 2;
+    padding: 20px;
+}
+
+.bio h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.bio p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 50px 0;
+}
+
+
+.portfolio-items {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.portfolio-item {
+    text-align: center;
+    background-color: #4CAF50;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.thumbnail {
+    width: 100%;
+    max-width: 200px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+/* YouTube Section */
+.youtube {
+    background-color: #333;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.youtube a {
+    color: #ff6347;
+    font-size: 1.5em;
+    text-decoration: none;
+    
+    
+}
+
+.youtube a:hover {
+    text-decoration: underline;
+}
+
+/* Skills Section */
+.skills {
+    padding: 50px 0;
+}
+
+.skills ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.skills ul li {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.skills ul li:hover {
+    transform: scale(1.1);
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 0;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #45a049;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .about-me {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .portfolio-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
